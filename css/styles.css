@@ -407,6 +407,9 @@ body {
   color: #f4f4fd;
 }
 
+.footer-form{
+  margin-left: auto;
+}
 .footer-form-title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -414,6 +417,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+.subscribe-form{
+  display: flex;
 }
 
 .subscribe-form-label{
