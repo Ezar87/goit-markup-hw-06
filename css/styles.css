@@ -103,11 +103,9 @@ body {
   background-color: #404bbf;
   border-radius: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 .nav-item link {
   text-decoration: none;
-  
 }
 .nav-item:hover,
 .nav-item:focus {
@@ -408,7 +406,7 @@ body {
   color: #f4f4fd;
 }
 
-.footer-form{
+.footer-form {
   margin-left: auto;
 }
 .footer-form-title {
@@ -419,15 +417,15 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.subscribe-form{
+.subscribe-form {
   display: flex;
 }
 
-.subscribe-form-label{
+.subscribe-form-label {
   margin-right: 24px;
 }
 
-.email-form-line{
+.email-form-line {
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -436,21 +434,21 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
 }
- ::placeholder {
+::placeholder {
   color: #ffffff;
- }
+}
 
- .subscribe-form-btn{
+.subscribe-form-btn {
   min-width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -462,7 +460,7 @@ body {
   border-radius: 4px;
 }
 
-.btn-icon{
+.btn-icon {
   margin-left: 16px;
 }
 /* Portfolio */
@@ -522,7 +520,7 @@ body {
 }
 
 .block:hover .overlay,
-.block:focus .overlay{
+.block:focus .overlay {
   transform: translateY(0%);
 }
 
@@ -590,7 +588,7 @@ body {
   pointer-events: none;
 }
 .modal-window {
-  padding: 72px 24px 24px 24px; 
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -634,7 +632,7 @@ body {
   fill: #ffffff;
 }
 
-.modal-title{
+.modal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -644,7 +642,7 @@ body {
   margin-bottom: 16px;
 }
 
-.modal-window-lines{
+.modal-window-lines {
   margin-bottom: 8px;
 }
 
@@ -656,9 +654,9 @@ body {
   display: block;
   margin-bottom: 4px;
 }
- 
+
 .user-name-line {
-position: relative;
+  position: relative;
 }
 
 .us-name {
@@ -669,12 +667,11 @@ position: relative;
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .us-name:focus {
-border-color: #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .us-name-icon {
@@ -683,30 +680,30 @@ border-color: #4d5ae5;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
-  .us-name:focus + .us-name-icon {
-    fill: #4d5ae5;
-  }
+.us-name:focus + .us-name-icon {
+  fill: #4d5ae5;
+}
 
-  .comment-line {
-    margin-bottom: 16px;
-  }
+.comment-line {
+  margin-bottom: 16px;
+}
 
-  .user-comment-text {
-width: 100%;
-height: 120px;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: rgba(46, 47, 66, 0.4);
-border: 1px solid rgba(46, 47, 66, 0.2);
-border-radius: 4px;
-background-color: transparent;
-padding: 8px 16px;
-outline: transparent;
-resize: none;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.user-comment-text {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-comment-text:focus {
@@ -730,14 +727,20 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #2e2f42;
   border-radius: 2px;
   display: inline-flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   fill: transparent;
-
 }
 
-.user-privacy-text:checked + .privacy-checkbox-new {
-  opacity: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;}
+
+.user-privacy-condition:checked + .user-privacy-text .privacy-checkbox-new {
   background-color: var(--background-color-check);
   border: none;
   fill: var(--accent-text-color);
@@ -753,7 +756,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto",sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
